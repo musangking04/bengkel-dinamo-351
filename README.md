@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bengkel Dinamo 351 - Spesialis Gulung & Servis Dinamo</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome untuk Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bengkelDark: '#121214',
+                        bengkelGray: '#1a1a1e',
+                        bengkelAccent: '#f59e0b', // Warna Kuning/Amber Dinamo
+                        bengkelAccentHover: '#d97706'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-bengkelDark text-gray-100 font-sans antialiased">
+
+    <!-- NAVBAR -->
+    <nav class="fixed w-full z-50 bg-bengkelDark/90 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center gap-2">
+                    <div class="bg-bengkelAccent text-bengkelDark p-2 rounded-lg font-black text-xl tracking-wider">
+                        351
+                    </div>
+                    <span class="text-xl font-bold tracking-tight uppercase">Bengkel <span class="text-bengkelAccent">Dinamo</span></span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide">
+                    <a href="#beranda" class="hover:text-bengkelAccent transition-colors">Beranda</a>
+                    <a href="#layanan" class="hover:text-bengkelAccent transition-colors">Layanan</a>
+                    <a href="#keunggulan" class="hover:text-bengkelAccent transition-colors">Keunggulan</a>
+                    <a href="#kontak" class="bg-bengkelAccent text-bengkelDark px-5 py-2.5 rounded-md font-semibold hover:bg-bengkelAccentHover transition-all shadow-lg shadow-bengkelAccent/10">Hubungi Kami</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="beranda" class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden flex items-center min-h-screen">
+        <!-- Background Grid Effect -->
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,#232329_1px,transparent_1px),linear-gradient(to_bottom,#232329_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_55%_50%,#000_70%,transparent_100%)] opacity-40"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="grid md:grid-cols-12 gap-12 items-center">
+                <div class="md:col-span-7 space-y-6 text-center md:text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gray-800/80 border border-gray-700 text-xs font-semibold uppercase tracking-wider text-bengkelAccent">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Profesional & Bergaransi
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Solusi Cepat & Tepat untuk <span class="text-bengkelAccent">Segala Jenis Dinamo</span>
+                    </h1>
+                    <p class="text-gray-400 text-lg max-w-xl mx-auto md:mx-0">
+                        Bengkel Dinamo 351 melayani servis, gulung ulang (*rewinding*), dan perawatan dinamo industri, kendaraan, hingga mesin rumah tangga dengan hasil presisi tinggi.
+                    </p>
+                    <div class="pt-4 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                        <a href="https://wa.me/6281234567890" target="_blank" class="inline-flex items-center justify-center gap-2 bg-bengkelAccent text-bengkelDark px-8 py-4 rounded-xl font-bold hover:bg-bengkelAccentHover transition-all transform hover:-translate-y-0.5 shadow-xl shadow-bengkelAccent/20">
+                            <i class="fab fa-whatsapp text-lg"></i> Konsultasi Gratis (WA)
+                        </a>
+                        <a href="#layanan" class="inline-flex items-center justify-center bg-gray-800 hover:bg-gray-700 border border-gray-700 px-8 py-4 rounded-xl font-semibold transition-all">
+                            Lihat Layanan
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Badge Penunjang / Grafis Sederhana -->
+                <div class="md:col-span-5 hidden md:block relative">
+                    <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-bengkelAccent to-amber-700 opacity-20 blur-xl"></div>
+                    <div class="relative bg-bengkelGray border border-gray-800 p-8 rounded-2xl shadow-2xl space-y-6">
+                        <div class="border-b border-gray-800 pb-4">
+                            <h3 class="text-lg font-bold text-gray-300">Jam Operasional</h3>
+                            <p class="text-sm text-bengkelAccent">Buka Setiap Hari (08:00 - 17:00)</p>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-gray-800 flex items-center justify-center text-bengkelAccent"><i class="fas fa-bolt"></i></div>
+                                <div>
+                                    <h4 class="text-sm font-bold">Pengerjaan Cepat</h4>
+                                    <p class="text-xs text-gray-400">Mesin modern & teknisi berpengalaman</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-gray-800 flex items-center justify-center text-bengkelAccent"><i class="fas fa-shield-alt"></i></div>
+                                <div>
+                                    <h4 class="text-sm font-bold">Garansi Hasil</h4>
+                                    <p class="text-xs text-gray-400">Jaminan performa dinamo kembali optimal</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LAYANAN SECTION -->
+    <section id="layanan" class="py-24 bg-bengkelGray border-y border-gray-800 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="text-xs font-bold text-bengkelAccent uppercase tracking-widest">Apa Yang Kami Lakukan</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold tracking-tight">Layanan Utama Bengkel 351</p>
+                <div class="w-16 h-1 bg-bengkelAccent mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Layanan 1 -->
+                <div class="bg-bengkelDark border border-gray-800 p-8 rounded-2xl hover:border-bengkelAccent/50 transition-all group duration-300">
+                    <div class="w-14 h-14 bg-bengkelGray border border-gray-700 rounded-xl flex items-center justify-center text-bengkelAccent text-2xl mb-6 group-hover:bg-bengkelAccent group-hover:text-bengkelDark transition-colors">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Gulung Dinamo (Rewinding)</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Penggantian kawat tembaga lama dengan tembaga berkualitas tinggi (*pure copper*) sesuai standar spesifikasi pabrikan.
+                    </p>
+                </div>
+
+                <!-- Layanan 2 -->
+                <div class="bg-bengkelDark border border-gray-800 p-8 rounded-2xl hover:border-bengkelAccent/50 transition-all group duration-300">
+                    <div class="w-14 h-14 bg-bengkelGray border border-gray-700 rounded-xl flex items-center justify-center text-bengkelAccent text-2xl mb-6 group-hover:bg-bengkelAccent group-hover:text-bengkelDark transition-colors">
+                        <i class="fas fa-car-battery"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Dinamo Starter & Alternator</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Servis komponen kelistrikan kendaraan, perbaikan dinamo starter mogok, pengisian aki (alternator) drop untuk mobil atau motor.
+                    </p>
+                </div>
+
+                <!-- Layanan 3 -->
+                <div class="bg-bengkelDark border border-gray-800 p-8 rounded-2xl hover:border-bengkelAccent/50 transition-all group duration-300">
+                    <div class="w-14 h-14 bg-bengkelGray border border-gray-700 rounded-xl flex items-center justify-center text-bengkelAccent text-2xl mb-6 group-hover:bg-bengkelAccent group-hover:text-bengkelDark transition-colors">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Dinamo Industri & Pompa</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Menangani perbaikan elektro motor 1-Phase / 3-Phase skala pabrik, pompa air submersible, blower, dan dinamo kompresor.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KEUNGGULAN SECTION -->
+    <section id="keunggulan" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h2 class="text-xs font-bold text-bengkelAccent uppercase tracking-widest">Mengapa Memilih Kami</h2>
+                    <p class="text-3xl sm:text-4xl font-extrabold tracking-tight">Komitmen Kualitas Hasil Kerja</p>
+                    <p class="text-gray-400 leading-relaxed">
+                        Kami memahami bahwa dinamo adalah jantung dari mesin Anda. Kerusakan pada dinamo berarti operasional terhambat. Bengkel 351 hadir memberikan rasa aman dengan standar kerja terbaik.
+                    </p>
+                    
+                    <div class="space-y-4 pt-4">
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 text-emerald-500 mt-1"><i class="fas fa-check-circle text-xl"></i></div>
+                            <div>
+                                <h4 class="font-bold text-gray-200">Tembaga Standar Tinggi</h4>
+                                <p class="text-gray-400 text-sm">Menggunakan kawat email tembaga murni tahan panas ekstrem.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 text-emerald-500 mt-1"><i class="fas fa-check-circle text-xl"></i></div>
+                            <div>
+                                <h4 class="font-bold text-gray-200">Alat Ukur Akurat</h4>
+                                <p class="text-gray-400 text-sm">Pengecekan induktansi, tahanan, dan isolasi menggunakan alat ukur presisi.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 text-emerald-500 mt-1"><i class="fas fa-check-circle text-xl"></i></div>
+                            <div>
+                                <h4 class="font-bold text-gray-200">Harga Transparan</h4>
+                                <p class="text-gray-400 text-sm">Estimasi biaya diberikan di awal setelah pengecekan komponen.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Counter Statis -->
+                <div class="bg-bengkelGray border border-gray-800 p-8 rounded-2xl grid grid-cols-2 gap-6 relative">
+                    <div class="p-6 bg-bengkelDark border border-gray-800 rounded-xl text-center">
+                        <p class="text-4xl font-black text-bengkelAccent mb-2">10+</p>
+                        <p class="text-xs text-gray-400 uppercase tracking-wider font-semibold">Tahun Pengalaman</p>
+                    </div>
+                    <div class="p-6 bg-bengkelDark border border-gray-800 rounded-xl text-center">
+                        <p class="text-4xl font-black text-bengkelAccent mb-2">1k+</p>
+                        <p class="text-xs text-gray-400 uppercase tracking-wider font-semibold">Dinamo Diperbaiki</p>
+                    </div>
+                    <div class="p-6 bg-bengkelDark border border-gray-800 rounded-xl text-center">
+                        <p class="text-4xl font-black text-bengkelAccent mb-2">100%</p>
+                        <p class="text-xs text-gray-400 uppercase tracking-wider font-semibold">Jaminan Garansi</p>
+                    </div>
+                    <div class="p-6 bg-bengkelDark border border-gray-800 rounded-xl text-center">
+                        <p class="text-4xl font-black text-bengkelAccent mb-2">24/7</p>
+                        <p class="text-xs text-gray-400 uppercase tracking-wider font-semibold">Respon Konsultasi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION / KONTAK -->
+    <section id="kontak" class="py-20 bg-gradient-to-b from-bengkelGray to-bengkelDark border-t border-gray-800 relative">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8 relative z-10">
+            <h2 class="text-3xl sm:text-5xl font-black tracking-tight">Dinamo Bermasalah atau Lemah?</h2>
+            <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                Jangan tunggu sampai terbakar total. Konsultasikan gejala kerusakan dinamo Anda sekarang demi mencegah kerusakan komponen mesin lainnya.
+            </p>
+            <div class="pt-4">
+                <a href="https://wa.me/6281234567890" target="_blank" class="inline-flex items-center gap-3 bg-emerald-600 text-white px-10 py-5 rounded-xl font-bold text-lg hover:bg-emerald-500 transition-all transform hover:-translate-y-1 shadow-2xl shadow-emerald-600/20">
+                    <i class="fab fa-whatsapp text-2xl"></i> Hubungi via WhatsApp Sekarang
+                </a>
+            </div>
+            <div class="text-sm text-gray-500 pt-4 flex flex-col sm:flex-row items-center justify-center gap-6">
+                <span><i class="fas fa-map-marker-alt text-bengkelAccent mr-2"></i> Lokasi Bengkel Utama 351</span>
+                <span class="hidden sm:inline">•</span>
+                <span><i class="fas fa-phone text-bengkelAccent mr-2"></i> +62 812-3456-7890</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-bengkelDark border-t border-gray-900 py-8 text-center text-xs text-gray-500">
+        <p>&copy; 2026 Bengkel Dinamo 351. Hak Cipta Dilindungi Undang-Undang.</p>
+    </footer>
+
+</body>
+</html>
